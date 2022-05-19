@@ -1,0 +1,477 @@
+@import "_variables.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $backgroundGradient;
+  font-family: $fontStack;
+  // position: relative;
+}
+
+h1 {
+  background-color: $primaryColor;
+  background-image: $headingGradient;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontStack;
+}
+
+p,
+span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: $whiteColor;
+  font-family: $fontStack;
+}
+
+.main__view {
+  display: grid;
+  place-items: center;
+}
+.side__nav {
+  position: fixed;
+  height: 80vh;
+  padding: 5rem 12rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .nav__link {
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      filter: none;
+    }
+    &:focus {
+      img {
+        filter: grayscale(100%);
+      }
+    }
+  }
+}
+
+.slider__section {
+  .slider__content {
+    h2 {
+      color: $whiteColor;
+      font-size: 8rem;
+      margin-left: 1rem;
+      font-weight: 700;
+    }
+    img {
+      width: auto;
+      height: 250px;
+    }
+  }
+}
+
+.about__section {
+  .about__content {
+    p {
+      font-size: 4rem;
+    }
+  }
+}
+
+.advantage__section {
+  .advantage__table {
+    background: $transparentBackground;
+    border-radius: 1.2rem;
+    table {
+      color: $whiteColor;
+      height: 50vh;
+      thead {
+        tr {
+          th {
+            font-size: 1.5rem !important;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            &:first-child {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .advantage__content {
+    h2 {
+      font-size: 4rem;
+      color: $primaryColor;
+      font-weight: 800;
+    }
+  }
+}
+
+.buy__section {
+  h2 {
+    font-size: 4rem;
+    color: $primaryColor;
+    font-weight: 800;
+  }
+  .card {
+    background: $transparentBackground;
+    h5 {
+      font-size: 1.2rem;
+    }
+    img {
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-weight: normal;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.documents__section {
+  h2 {
+    font-size: 5rem;
+    color: $primaryColor;
+    font-weight: 800;
+  }
+  .card {
+    background: $transparentBackground;
+    h5 {
+      text-transform: uppercase;
+    }
+    img {
+      margin-bottom: 1rem;
+    }
+    .btn__link {
+      background: transparent;
+      border: none;
+      outline: 0;
+      box-shadow: none;
+      color: $whiteColor;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.earning__section {
+  .earning__content {
+    h2 {
+      font-size: 4rem;
+      color: $primaryColor;
+      font-weight: 800;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin-top: 1rem;
+        p {
+          font-size: 1.2rem;
+          span {
+            color: $primaryColor;
+            font-weight: 800;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nft__section {
+  h2 {
+    font-size: 4rem;
+    color: $primaryColor;
+    font-weight: 800;
+  }
+  ul {
+    color: $whiteColor;
+    list-style-image: url("../img/bullet1.png");
+    list-style-type: none;
+    background-position: 0 0;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    list-style-position: outside;
+
+    li {
+      line-height: 36px;
+      &::marker {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .btn__learn {
+    border: 2px solid #efefef;
+    color: #efefef;
+  }
+
+  .btn__collection {
+    background: $headingGradient;
+    color: #efefef;
+    border: none;
+  }
+}
+
+.faqs__section {
+  h2 {
+    font-size: 4rem;
+    color: $primaryColor;
+    font-weight: 800;
+  }
+
+  .accordion__faq {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  // .accordion {
+  //   background-color: transparent;
+  // }
+  // .accordion-header {
+  //   background-color: transparent;
+  // }
+  // .accordion-button {
+  //   background-color: rgba($color: #000, $alpha: 0.1);
+  //   box-shadow: none !important;
+  //   border: none !important;
+  //   outline: 0 !important;
+  //   color: red !important;
+  // }
+  // .accordion-body {
+  //   background: rgba($color: #000, $alpha: 0.1);
+  //   text-align: center;
+  // }
+}
+
+.mobileapp__section {
+  h2 {
+    font-size: 4rem;
+    color: $primaryColor;
+    font-weight: 800;
+  }
+}
+
+.rewards__section {
+  .rewards__table {
+    height: 10vh;
+    tr {
+      background: $transparentBackground;
+      color: $primaryColor;
+      font-weight: 700;
+      td {
+        span {
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+  .rewards__content {
+    h2 {
+      font-size: 4rem;
+      color: $primaryColor;
+      font-weight: 800;
+    }
+  }
+}
+
+.staking__section {
+  .staking__content {
+    .card {
+      background: $transparentBackground !important;
+      border-radius: 1.2rem;
+      border: none;
+      img {
+        margin-bottom: 1rem;
+      }
+      .card-text {
+        font-size: 1rem;
+      }
+    }
+    h2 {
+      font-size: 5rem;
+      color: $primaryColor;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Todos Pills and Scrollbar
+.pills__list {
+  overflow: auto;
+  white-space: nowrap;
+}
+.todo__pill {
+  background: $transparentBackground;
+  border-radius: 1rem;
+  margin: 1rem;
+
+  display: inline-block;
+}
+
+//Todos
+
+.todo__section {
+  ::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px $secondaryColor;
+    border-radius: 1rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: $primaryColor;
+    border-radius: 1rem;
+  }
+  h4 {
+    color: $primaryColor;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+  .todo__content {
+    h2 {
+      font-size: 5rem;
+      color: $primaryColor;
+      font-weight: 800;
+    }
+    h4 {
+      font-size: 2.5rem;
+      color: $primaryColor;
+      font-weight: 700;
+    }
+  }
+}
+
+.tokenomics__section {
+  .card {
+    background: $transparentBackground;
+    text-transform: uppercase;
+    img {
+      width: 80px !important;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  }
+  .tokenomics__content {
+    h2 {
+      font-size: 5rem;
+      color: $primaryColor;
+      font-weight: 800;
+    }
+  }
+  table {
+    font-size: 1.2rem;
+    line-height: 36px;
+    tr {
+      border: none !important;
+      color: $whiteColor;
+      td {
+        &:last-child {
+          color: $primaryColor;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.footer__section {
+  .footer__socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: $whiteColor;
+      text-decoration: none;
+    }
+  }
+}
+
+// Responsiveness Settings
+
+@media screen and (max-width: 540px) {
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 1.2rem !important;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem !important;
+  }
+
+  p,
+  span {
+    font-weight: 400;
+    font-size: 0.8rem !important;
+  }
+
+  .container {
+    min-height: auto !important;
+    height: auto !important;
+  }
+  .row {
+    width: auto !important;
+  }
+
+  .slider__section,
+  .about__section,
+  .advantage__section,
+  .buy__section,
+  .documents__section,
+  .earning__section,
+  .faqs__section,
+  .mobileapp__section,
+  .nft__section,
+  .rewards__section,
+  .staking__section,
+  .todo__section,
+  .tokenomics__section {
+    height: 100vh !important;
+    // height: 100% !important;
+    width: 100% !important;
+  }
+  .w-100 {
+    width: auto !important;
+  }
+  .side__nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .min-vh-100 {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+}

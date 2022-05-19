@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$fontStack: "Poppins", sans-serif;
+$backgroundGradient: linear-gradient(
+  45deg,
+  rgba(119, 74, 174, 1) 0%,
+  rgba(118, 21, 137, 1) 15%,
+  rgba(79, 20, 95, 1) 30%,
+  rgba(54, 20, 68, 1) 50%,
+  rgba(18, 19, 29, 1) 77%,
+  rgba(18, 19, 29, 1) 98%
+);
+
+$backgroundGradient2: radial-gradient(
+  circle,
+  rgba(119, 74, 174, 1) 98%,
+  rgba(118, 21, 137, 1) 77%,
+  rgba(79, 20, 95, 1) 50%,
+  rgba(54, 20, 68, 1) 30%,
+  rgba(18, 19, 29, 1) 15%,
+  rgba(18, 19, 29, 1) 0%
+);
+
+$whiteColor: #ffffff;
+
+$primaryColor: rgba(8, 152, 107, 1);
+$secondaryColor: rgba(155, 12, 180, 1);
+$transparentBackground: rgba(255, 255, 255, 0.1);
+$headingGradient: linear-gradient(148.47deg, #08986b 38.51%, #9b0cb4 144.42%);
+
+$gradientDark: linear-gradient(
+  180deg,
+  rgba(8, 68, 152, 1) 0%,
+  rgba(155, 12, 180, 1) 100%
+);
+
+.btn-gradient {
+  background: $headingGradient;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-weight: 600;
+  color: $whiteColor !important;
+  border: none;
+  outline: 0;
+}
+
+.btn-gradient-dark {
+  background: $gradientDark;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-weight: 600;
+  color: $whiteColor !important;
+  border: none;
+  outline: 0;
+}
