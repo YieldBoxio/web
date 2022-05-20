@@ -15,7 +15,7 @@ const Slider = () => {
                 <h2>Yield Box</h2>
               </div>
             </Zoom>
-            <h5 className="hero-section-sub-heading">YieldBox . Finance</h5>
+            <h5 className="hero-section-sub-heading">Y i e l d B o x . i o</h5>
           </Col>
         </Row>
       </Container>

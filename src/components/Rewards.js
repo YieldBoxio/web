@@ -7,13 +7,13 @@ const Rewards = () => {
     <div className="bgImg rewards__section" id="rewards__section">
       <div className="container-md min-vh-100 d-flex flex-column justify-content-center align-items-center">
         <Row className="my-3 justify-content-center">
-          <Col xs="8" className="text-center rewards__content">
+          <Col className="text-center rewards__content">
             <Slide left>
-              <h2>APY/Dual Reward Tax</h2>
+              <h2>Entry/Exit Fee Break Down</h2>
             </Slide>
-            <Slide right>
+            {/* <Slide right>
               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu m doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-            </Slide>
+            </Slide> */}
           </Col>
         </Row>
         <Row className="advantage__table w-100">
@@ -22,20 +22,20 @@ const Rewards = () => {
               <Table borderless responsive="sm" className="rewards__table align-middle table-responsive">
                 <thead>
                   <tr>
-                    <td>APY</td>
-                    <td>14% <span>Reflection to Holders</span></td>
-                    <td>2% <span>Marketing</span></td>
-                    <td>1% <span>Liquidity Pool</span></td>
-                    <td>1% <span>BuyBack {"&"} Burn</span></td>
+                    <td>Entry 13%</td>
+                    <td>7% <span>BUSD Reward</span></td>
+                    <td>4% <span>Auto-Liquidity</span></td>
+                    <td>1% <span>YieldBox Treasury</span></td>
+                    <td>1% <span>The Bonfire</span></td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>APY</td>
-                    <td>14% <span>Reflection to Holders</span></td>
-                    <td>2% <span>Marketing</span></td>
-                    <td>1% <span>Liquidity Pool</span></td>
-                    <td>1% <span>BuyBack {"&"} Burn</span></td>
+                    <td className="red-color danger">Exit 15%</td>
+                    <td>7% <span>BUSD Reward</span></td>
+                    <td>4% <span>Auto-Liquidity</span></td>
+                    <td>3% <span>YieldBox Treasury</span></td>
+                    <td>1% <span>The Bonfire</span></td>
                   </tr>
                 </tbody>
               </Table>

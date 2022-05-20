@@ -12,7 +12,7 @@ const Nft = () => {
                     <Slide top>
                         <Col className="text-center">
                             <h2>Enjoy</h2>
-                            <p>YieldBox NFT Collection</p>
+                            {/* <p>YieldBox NFT Collection</p> */}
                         </Col>
                     </Slide>
                 </Row>

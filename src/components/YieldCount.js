@@ -7,7 +7,7 @@ const YieldCount = () => {
     const [focus, setFocus] = useState(false);
     return (
         <div className="YieldCount-wrapper">
-            <CountUp start={focus ? 0 : null} end={117151970} duration={5} redraw={true}>
+            <CountUp start={focus ? 100000 : null} end={117151970} duration={1} redraw={true}>
                 {({ countUpRef }) => (
                     <div className='w-100 '>
                         <span className='rebase-count'><i class="fas fa-plus"></i></span>

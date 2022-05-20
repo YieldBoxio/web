@@ -64,7 +64,7 @@ const Tokenomics = () => {
               <Slide right>
                 <Row className="my-3 w-100">
                   <Col xs="6">
-                    <Card className="text-center text-white p-3">
+                    <Card className="text-center text-white p-3 rebase-card">
                       <div className="card__content">
                         <img alt="card img" src={dummyImg} />
                         <h5>Liquidity Pool</h5>
@@ -72,7 +72,7 @@ const Tokenomics = () => {
                     </Card>
                   </Col>
                   <Col xs="6">
-                    <Card className="text-center text-white p-3">
+                    <Card className="text-center text-white p-3 rebase-card">
                       <div className="card__content">
                         <img alt="card img" src={rewards} />
                         <h5>Rewards</h5>
@@ -82,7 +82,7 @@ const Tokenomics = () => {
                 </Row>
                 <Row className="my-3 w-100">
                   <Col xs="6">
-                    <Card className="text-center text-white p-3">
+                    <Card className="text-center text-white p-3 rebase-card">
                       <div className="card__content">
                         <img alt="card img" src={yieldbox} />
                         <h5>Yieldbox Treasury</h5>
@@ -90,7 +90,7 @@ const Tokenomics = () => {
                     </Card>
                   </Col>
                   <Col xs="6">
-                    <Card className="text-center text-white p-3">
+                    <Card className="text-center text-white p-3 rebase-card">
                       <div className="card__content">
                         <img alt="card img" src={yieldinferno} />
                         <h5>Yieldbox Inferno</h5>

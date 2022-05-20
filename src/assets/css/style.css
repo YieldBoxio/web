@@ -247,7 +247,8 @@ span {
 
 .buy__section .card p {
   font-weight: normal;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  margin: 15px 0px 15px 0px;
 }
 .Documents-row {
   display: flex;

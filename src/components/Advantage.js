@@ -37,24 +37,24 @@ const Advantage = () => {
                   </tr>
                   <tr>
                     <td>Fees</td>
-                    <td>13% / 17%</td>
+                    <td>13% / 15%</td>
                     <td>14% / 16%</td>
                     <td>15% / 25%</td>
                     <td>13% / 18%</td>
                   </tr>
                   <tr>
                     <td>Rebase Frequency</td>
-                    <td>1 block (3 seconds)</td>
+                    <td>5 minutes</td>
                     <td>15 minutes</td>
                     <td>30 minutes</td>
                     <td>30 minutes</td>
                   </tr>
                   <tr>
                     <td>Dual Rward</td>
-                    <td>1 block (3 seconds)</td>
-                    <td>15 minutes</td>
-                    <td>30 minutes</td>
-                    <td>30 minutes</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
                   </tr>
                   <tr>
                     <td>NFT Collection</td>

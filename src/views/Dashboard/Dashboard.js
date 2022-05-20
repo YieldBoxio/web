@@ -60,7 +60,6 @@ const Dashboard = () => {
                                         <i className="fa-brands fa-instagram"></i>
                                     </a>
                                     <a href="#" className="social__link">
-                                        {/* <i className="fa-brands fa-medium"></i> */}
                                         <i class="fab fa-medium-m"></i>
                                     </a>
                                     <a href="#" className="social__link">
