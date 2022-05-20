@@ -6,6 +6,7 @@ import reflection from "../assets/img/reflection.png";
 import Slide from "react-reveal/Slide";
 import Zoom from 'react-reveal/Zoom';
 import CountUp from 'react-countup';
+import YieldCount from "./YieldCount";
 
 const Staking = () => {
   const onComplete = () => {
@@ -27,19 +28,7 @@ const Staking = () => {
               <Zoom className="count-flex-box">
                 {/* <span>+</span>
                 <span>%</span> */}
-                <CountUp
-                  className="custom-count rebase-count"
-                  start={0}
-                  end={117151970}
-                  duration={2.75}
-                  useEasing={true}
-                  separator=" "
-                  decimal=","
-                  // prefix="+"
-                  // suffix="%"
-                  onComplete={onComplete}
-                  onStart={onStart}
-                />
+                <YieldCount />
               </Zoom>
               <Slide bottom>
                 <p>
