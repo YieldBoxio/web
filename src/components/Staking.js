@@ -23,7 +23,7 @@ const Staking = () => {
           <Col xs="12" className="text-center staking__content">
             <div className="container-md px-md-5">
               <Slide top>
-                <p>Fastest Dual Rebase🏃‍♀️ Auto-Staking and Auto-Reflection Protocol (YASAR) </p>
+                <p>Fastest Dual Reward Auto-Staking, BUSD-Reflection Protocol</p>
               </Slide>
               <Zoom className="count-flex-box">
                 {/* <span>+</span>

@@ -30,7 +30,7 @@ const Advantage = () => {
                 <tbody>
                   <tr>
                     <td>APY</td>
-                    <td>825,992.35%</td>
+                    <td>+1,171,519.70%</td>
                     <td>383025.8%</td>
                     <td>158893.59%</td>
                     <td>102483.58%</td>
