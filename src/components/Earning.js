@@ -9,23 +9,23 @@ const Earning = () => {
         <Row className="justify-content-center align-items-center w-100">
           <Col xs="12" md="12" lg="6" className="earning__content">
             <Slide right>
-              <h2>How much <br /> can I will earn?</h2>
+              <h2>How much <br />I can will earn?</h2>
               <ul>
-                <li className="d-flex">
+                {/* <li className="d-flex">
                   <div className="left-border-line"></div>
                   <p>
-                    At the end of the year and with <span>$1,000 <br /> USD</span> of
-                    <span>$MINT</span> invested.
+                    At the end of the year and with <span>$1,000 <br /> USD</span> of &nbsp;
+                    <span> $ YBX</span> invested.
                   </p>
-                </li>
+                </li> */}
                 <li className="d-flex">
                   <div className="left-border-line"></div>
                   <p>
-                    You can earn up to <span>$3,850,945.80 USD</span> of{" "}
+                    <span>$ YBX</span> token holders with investment of <span>$100 </span> in &nbsp;
                     <span>
-                      $MINT at 385,945.80% APY* plus <br /> an hourly BUSD rewards
-                    </span>
-                    .
+                      $YBX </span> <br /> can easily earn up to <span>$1,171,619.75 USD</span> of <span>$YBX</span> at <span>
+                      1,171,519.7%</span> <span>APY plus an hourly 7%</span> <span className="BUSD__color">BUSD</span> &nbsp;
+                    reflection.
                   </p>
                 </li>
               </ul>

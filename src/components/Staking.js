@@ -22,26 +22,29 @@ const Staking = () => {
           <Col xs="12" className="text-center staking__content">
             <div className="container-md px-md-5">
               <Slide top>
-                <p>FIRST REBASE AUTO-STAKING WITH BUSD REFLECTION</p>
+                <p>Fastest Dual Rebase🏃‍♀️ Auto-Staking and Auto-Reflection Protocol (YASAR) </p>
               </Slide>
               <Zoom className="count-flex-box">
-                <h2>+
-                  <CountUp
-                    className="custom-count rebase-count"
-                    start={0}
-                    end={117151970}
-                    duration={2.75}
-                    useEasing={true}
-                    separator=" "
-                    decimal=","
-                    onComplete={onComplete}
-                    onStart={onStart}
-                  />
-                  %</h2>
+                {/* <span>+</span>
+                <span>%</span> */}
+                <CountUp
+                  className="custom-count rebase-count"
+                  start={0}
+                  end={117151970}
+                  duration={2.75}
+                  useEasing={true}
+                  separator=" "
+                  decimal=","
+                  // prefix="+"
+                  // suffix="%"
+                  onComplete={onComplete}
+                  onStart={onStart}
+                />
               </Zoom>
               <Slide bottom>
                 <p>
-                  Paid every 5 minutes, and a simple buy-hold-earn system that grows your $BUSD and $YBX portfolio in your wallet at a lightning fast pace.
+                  Extensively compound the investments and returns, results as rewards every 5 minutes, 288 times daily and
+                  7% BUSD reflection every 60 minutes, 24 times a day.
                 </p>
               </Slide>
               <Slide bottom>

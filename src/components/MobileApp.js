@@ -6,6 +6,8 @@ import Slide from "react-reveal/Slide";
 import FDroidSVG from "./FDroidSVG";
 import ApkSVG from "./ApkSVG";
 import ReactTooltip from 'react-tooltip';
+import yieldQR from '../assets/img/yieldboxqr.png';
+
 
 const MobileApp = () => {
   return (
@@ -32,12 +34,12 @@ const MobileApp = () => {
                   </button>
                   <p><ApkSVG /> Download APK file</p>
                 </div>
-                <button data-tip="hello world" type="button" class="btn-gradient px-4 w-auto btn-lg h-fit-content">
-                  <i class="fas fa-qrcode"></i>
+                <button data-tip="hello world" type="button" class="qrbtn w-auto btn-lg h-fit-content">
+                  <img src={yieldQR} />
                 </button>
-                <ReactTooltip >
+                <ReactTooltip className="tooltip-main-box">
                   <div className="tooltip-qr-wrapper">
-                    <i class="fas fa-qrcode"></i>
+                    <img src={yieldQR} />
                   </div>
                 </ReactTooltip>
               </div>

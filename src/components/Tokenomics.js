@@ -17,6 +17,7 @@ const Tokenomics = () => {
         </Row>
         <Row className="align-items-center w-100 tokenomics__table-wrapper">
           <Col lg="6" md="12" className="my-3 tokenomics__table">
+            <h6 className="tokenomics__table-subheading">Network: Binance Smart Chain (BEP-20)</h6>
             <Slide left>
               <Table responsive="sm">
                 <tr>
@@ -24,20 +25,36 @@ const Tokenomics = () => {
                   <td>Yield Box</td>
                 </tr>
                 <tr>
-                  <td>Total Supply:</td>
-                  <td>325,000</td>
+                  <td>Symbol:</td>
+                  <td>$YBX</td>
                 </tr>
                 <tr>
-                  <td>Symbol:</td>
-                  <td>$MINT</td>
+                  <td>Initial Supply:</td>
+                  <td>10,000,000</td>
                 </tr>
                 <tr>
                   <td>Entry Fee:</td>
-                  <td>14%</td>
+                  <td>13%</td>
                 </tr>
                 <tr>
-                  <td>Exit Fee:</td>
-                  <td>16%</td>
+                  <td>Decimals:</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Initial Supply Percentage:</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td>Fair Launch:</td>
+                  <td>53%</td>
+                </tr>
+                <tr>
+                  <td>Liquidity:</td>
+                  <td>40%</td>
+                </tr>
+                <tr>
+                  <td>Airdrop:</td>
+                  <td>1%</td>
                 </tr>
               </Table>
             </Slide>

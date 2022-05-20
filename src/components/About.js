@@ -11,8 +11,8 @@ const About = () => {
             <Col xs="12" className="text-center about__content">
               <Container>
                 <p>
-                  "Epic Dual Reward with Auto-Staking, Auto-compounding with BUSD
-                  Reflections"
+                  “World’s No.1 Yield Box Auto-Staking and Auto-Reflection Protocol (YASAR) with every
+                  5-minute Reward and every hour for 7% <span className="BUSD__color">BUSD</span> Reflection”
                 </p>
               </Container>
               <Row className="justify-content-center">

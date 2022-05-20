@@ -6,9 +6,18 @@ import Slide from "react-reveal/Slide";
 
 const Todo = () => {
   const listData = [
-    { name: 'Website' },
-    { name: 'Dashboard V1' },
-    { name: 'Whitepaper' },
+    {
+      name: 'Website',
+      class: "completeTask"
+    },
+    {
+      name: 'Dashboard V1',
+      class: "completeTask"
+    },
+    {
+      name: 'Whitepaper',
+      class: "completeTask"
+    },
     { name: 'InterFi Audit' },
     { name: 'CertiK Audit' },
     { name: 'Pre-Launch Marketing' },
@@ -74,7 +83,7 @@ const Todo = () => {
               <div className="pills__list">
                 {
                   listData.map(data => (
-                    <span className="todo__pill py-3 px-5">{data.name}</span>
+                    <span className={data.class ? 'py-3 px-5 completeTask' : 'todo__pill py-3 px-5'}>{data.name}</span>
                   ))
 
                 }

@@ -16,7 +16,7 @@ const Advantage = () => {
         </Row>
         <Zoom>
           <Row className="advantage__table">
-            <Col lg="12" md="12">
+            <Col lg="12" md="12" className="advantage__table__scroll">
               <Table borderless responsive="sm" className="competitive-table align-middle table-responsive">
                 <thead>
                   <tr>
@@ -50,6 +50,13 @@ const Advantage = () => {
                     <td>30 minutes</td>
                   </tr>
                   <tr>
+                    <td>Dual Rward</td>
+                    <td>1 block (3 seconds)</td>
+                    <td>15 minutes</td>
+                    <td>30 minutes</td>
+                    <td>30 minutes</td>
+                  </tr>
+                  <tr>
                     <td>NFT Collection</td>
                     <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
                     <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
@@ -57,17 +64,80 @@ const Advantage = () => {
                     <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
                   </tr>
                   <tr>
-                    <td>WSF Bank</td>
+                    <td>Generate Revenue to Backup High APY</td>
                     <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
                     <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
                     <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
                     <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
                   </tr>
                   <tr>
-                    <td>Generate Revenue to Backup High APY</td>
+                    <td>Cross-chain Bridge</td>
                     <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
                     <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Social P2E Game</td>
                     <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Automatic Burn</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Sustainable Rebasing</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Auto-Liquidity</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Auto-Staking</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Rug-Proof: No Minting Code</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Rug-Proof: Liquidity Locked</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Rug-Proof: Fixed Rebase Time</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                  </tr>
+                  <tr>
+                    <td>Manual Token Buyback</td>
+                    <td><img src={check} width="20px" height="auto" alt="Yield Box" /> Yes</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
+                    <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> Yes</td>
                     <td><img src={cross} width="20px" height="auto" alt="Yield Box" /> No</td>
                   </tr>
                 </tbody>
