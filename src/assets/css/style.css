@@ -259,6 +259,18 @@ span {
   align-items: center;
   justify-content: space-between;
 }
+.next-move-give {
+  display: inline-grid;
+  text-align: left;
+}
+
+.next-move-give a {
+  margin-bottom: 10px;
+  color: #08986b;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 .documents__section h2 {
   font-size: 5rem;
   color: #08986b;
@@ -373,12 +385,23 @@ span {
   color: #efefef;
   width: 48%;
 }
+.nft__section .btn__learn:hover {
+  background: linear-gradient(194deg, #08986b 38.51%, #9b0cb4 144.42%);
+  color: #efefef;
+  border: none;
+}
 
 .nft__section .btn__collection {
-  background: linear-gradient(45deg, #08986b 0%, #9b0cb4 100%);
+  background: linear-gradient(194deg, #08986b 38.51%, #9b0cb4 144.42%);
   color: #efefef;
   border: none;
   width: 48%;
+}
+
+.nft__section .btn__collection:hover {
+  color: #efefef;
+  border: 2px solid #efefef;
+  background: transparent;
 }
 
 .faqs__section h2 {
