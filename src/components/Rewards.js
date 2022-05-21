@@ -31,7 +31,7 @@ const Rewards = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="red-color danger">Exit 15%</td>
+                    <td className="red-color danger">Exit <span className="down-fall">15%</span></td>
                     <td>7% <span>BUSD Reward</span></td>
                     <td>4% <span>Auto-Liquidity</span></td>
                     <td>3% <span>YieldBox Treasury</span></td>

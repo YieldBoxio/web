@@ -222,7 +222,9 @@ span {
   color: #08986b;
   font-weight: 800;
 }
-
+.down-fall {
+  color: red !important;
+}
 .buy__section h2 {
   font-size: 4rem;
   color: #08986b;
@@ -927,6 +929,7 @@ span {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .buy-yield {
     display: flex;
     flex-wrap: wrap;
