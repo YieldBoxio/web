@@ -110,7 +110,10 @@ span {
   display: grid;
   place-items: center;
 }
-
+.soon-text {
+  font-size: 13px;
+  font-weight: 300;
+}
 .side__nav {
   position: fixed;
   height: 80vh;
@@ -144,6 +147,7 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .side__nav .nav__link.active {
   background-image: url(../img/navlink.svg) !important;
@@ -278,6 +282,10 @@ span {
   font-size: 5rem;
   color: #08986b;
   font-weight: 800;
+}
+.documents__section div a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .documents__section .card {

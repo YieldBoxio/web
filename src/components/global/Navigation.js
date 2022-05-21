@@ -21,7 +21,7 @@ const Navigation = () => {
           <Nav className="ml-auto">
             <NavLink to="/" className="nav-link px-3 btn-gradient">
               {/* Dashboard */}
-              Comming soon
+              APP <span className="soon-text">(Coming Soon)</span>
             </NavLink>
           </Nav>
         </Container>
