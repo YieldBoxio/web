@@ -14,7 +14,7 @@ const Buy = () => {
           <Col xs="8" className="text-center">
             <Slide top>
               <h2>How to Buy</h2>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu m doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+              {/* <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu m doloremque laudantium, totam rem aperiam, eaque ipsa.</p> */}
             </Slide>
           </Col>
           <Col xs="12" className="text-center">
