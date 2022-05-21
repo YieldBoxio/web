@@ -19,8 +19,9 @@ const Navigation = () => {
             Yield Box
           </NavLink>
           <Nav className="ml-auto">
-            <NavLink to="/dashboard" className="nav-link px-3 btn-gradient">
-              Dashboard
+            <NavLink to="/" className="nav-link px-3 btn-gradient">
+              {/* Dashboard */}
+              Comming soon
             </NavLink>
           </Nav>
         </Container>

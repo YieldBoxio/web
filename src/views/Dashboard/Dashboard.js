@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Nav, Navbar, Col, Row, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/img/logo.svg";
@@ -7,9 +7,15 @@ import Calculator from "../../assets/img/calculator-link-img.png";
 import Swap from "../../assets/img/swap-link-img.png";
 import Docs from "../../assets/img/docs-link-img.png";
 import Slide from "react-reveal/Slide";
-import Zoom from "react-reveal/Zoom";
+import DashboardTabs from '../../components/DashboardComps/DashboardCopm';
+import { Collapse } from "reactstrap";
+import TabContent from 'react-bootstrap/TabContent'
+import TabPane from 'react-bootstrap/TabPane'
+import TabContainer from 'react-bootstrap/TabContainer'
 
 const Dashboard = () => {
+    const [show, setShow] = useState(0);
+    const [tabKey, initTabKey] = useState('one')
     return (
         <div className='dashboard-wrapper'>
             <Row className='m-0'>
@@ -29,10 +35,18 @@ const Dashboard = () => {
                         </Slide>
                         <Nav className="ml-auto dash-nav-links-wrapper">
                             <Slide left>
-                                <NavLink to="/dashboard" className="nav-link px-3 dash-link active-dash-link">
+                                <NavLink to="/dashboard" onClick={(e) =>
+                                    setShow((prevState) => ({
+                                        id: prevState.id == "0" ? "0" : "0",
+                                    }))
+                                } className="nav-link px-3 dash-link active-dash-link">
                                     <img src={Dashlinkimg} /> Dashboard
                                 </NavLink>
-                                <NavLink to="/dashboard" className="nav-link px-3 dash-link">
+                                <NavLink to="/dashboard" onClick={(e) =>
+                                    setShow((prevState) => ({
+                                        id: prevState.id == "1" ? "1" : "1",
+                                    }))
+                                } className="nav-link px-3 dash-link">
                                     <img src={Calculator} /> Calculator
                                 </NavLink>
                                 <NavLink to="/dashboard" className="nav-link px-3 dash-link">
@@ -75,47 +89,36 @@ const Dashboard = () => {
                     {/* End dashboard Right Nav */}
                     <Container fluid>
                         <div className='dashboard-main-content'>
-                            <h2>Dashboard</h2>
-                            <div className='Dashboard-card-wrapper row m-0'>
-                                <Zoom>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                    <div className='col-xl-3 col-md-3 col-sm-6 col-12 Dashboard-card'>
-                                        <p>$YLD Price</p>
-                                        <h5>$ 2.50</h5>
-                                    </div>
-                                </Zoom>
-                            </div>
+                            <Collapse isOpen={show.id == "0"}>
+                                <DashboardTabs />
+                            </Collapse>
+                            <Collapse isOpen={show.id == "1"}>
+                                <h1>this is 2nd</h1>
+                            </Collapse>
+                            <TabContainer activeKey={tabKey} onSelect={(e) => initTabKey(e)}>
+                                <Row>
+                                    <Col sm={3}>
+                                        <Nav variant="pills" className="flex-column">
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                            </Nav.Item>
+                                        </Nav>
+                                    </Col>
+                                    <Col sm={9}>
+                                        <TabContent >
+                                            <TabPane eventKey="first">
+                                                Sonnet
+                                            </TabPane>
+                                            <TabPane eventKey="second">
+                                                Sonnet2
+                                            </TabPane>
+                                        </TabContent>
+                                    </Col>
+                                </Row>
+                            </TabContainer>
                         </div>
                     </Container>
                 </Col>

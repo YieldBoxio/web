@@ -414,6 +414,12 @@ span {
 .faqs__section .accordion__faq:hover {
   cursor: pointer;
 }
+.collapse.show ul li {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
 
 .mobileapp__section {
   position: relative;

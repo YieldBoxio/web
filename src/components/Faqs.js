@@ -244,9 +244,9 @@ class Faqs extends React.Component {
                   }}
                 >
                   <p className="text-white mt-3">
-                    We're getting ready for our Fair Launch on Pinksale.
+                    Launch date will be announced soon.
                   </p>
-                  <p className="text-white mt-3">
+                  {/* <p className="text-white mt-3">
                     1 – How does the Dual Rebase work?
                   </p>
                   <p className="text-white mt-3">
@@ -283,7 +283,7 @@ class Faqs extends React.Component {
                   </p>
                   <p className="text-white mt-3">
                     5’ – The $YBX token is available on PancakeSwap. (but wait for our presale on pinksale finish first)
-                  </p>
+                  </p> */}
                 </Collapse>
               </Slide>
             </Col>
