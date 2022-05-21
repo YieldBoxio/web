@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Routes } from 'react-router-dom';
 import Auth from './layout/Auth';
 import Main from './layout/Main';
 import routes from './routes';
@@ -11,7 +11,7 @@ function App() {
 		<>
 			<Provider store={store}>
 				<BrowserRouter>
-					<Switch>
+					<Routes>
 						{routes.map(route => {
 							switch (route.layout) {
 								case 'main':
@@ -33,7 +33,7 @@ function App() {
 							}
 						})}
 						<Redirect to="/" />
-					</Switch>
+					</Routes>
 				</BrowserRouter>
 			</Provider>
 		</>

@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 import file from '../assets/img/file.png';
 import audit from '../assets/img/audit.png';
 import Slide from "react-reveal/Slide";
-import { useHistory } from 'react-router-dom';
 
 const Documents = () => {
-  const history = useHistory();
   return (
     <div className="bgImg documents__section" id="documents__section">
       <div className="container-md min-vh-100 d-flex flex-column justify-content-center align-items-center">
