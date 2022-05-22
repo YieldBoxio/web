@@ -761,7 +761,7 @@ span {
   background: linear-gradient(157deg, #08986b 38.51%, #9b0cb4 144.42%);
   border-radius: 10px;
   /* border-radius: 0.5rem; */
-  width: 139px;
+  min-width: 139px;
   font-weight: 600;
   color: #ffffff !important;
   border: none;
@@ -789,9 +789,13 @@ span {
 }
 .dashboard-main-content {
   color: white;
+  width: 100%;
 }
 .dashboard-main-content h2 {
   margin: 0px 40px 40px 40px;
+}
+.Dashboard-card-wrapper {
+  justify-content: space-between;
 }
 .Dashboard-card p {
   font-size: 15px;
@@ -802,15 +806,62 @@ span {
 }
 .Dashboard-card {
   text-align: center;
-  margin: 35px 35px;
+  margin: 25px 0px;
   padding: 50px 50px;
   border-radius: 15px;
+  width: 31%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.Dashboard-full-card {
+  border-radius: 15px;
+  padding: 20px 15px 30px 15px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 /* Dashboard */
+
+/* Calculator */
+
 .rebase-card:hover {
   background-color: #3c7774 !important;
 }
+.calculator-input-div {
+  position: relative;
+}
+.calculator-input-div span {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.calculator-input-div input {
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  padding: 5px 5px;
+  border-radius: 2px;
+  border: 1px solid white;
+  background-color: transparent;
+}
+.calculator-input-div input::placeholder {
+  color: white;
+}
+.calculator-input-div input:focus {
+  outline: none;
+}
+.calculator-column {
+  text-align: left;
+}
+.calculator-days-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calculator-days-row p {
+  margin: 5px 0px;
+  font-size: 15px;
+  font-weight: 300;
+}
+/* Calculator */
+
 /*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 1440px) {
@@ -842,7 +893,8 @@ span {
     padding: 5rem 2rem 5rem 2rem;
   }
   .Dashboard-card {
-    margin: 25px 25px;
+    width: 48%;
+    margin: 15px 0px;
     padding: 35px 35px;
     border-radius: 10px;
   }
@@ -901,7 +953,7 @@ span {
     color: #08986b;
   }
   .Dashboard-card {
-    margin: 30px 10px;
+    margin: 10px 0px;
     padding: 40px 40px;
   }
   .dashboard-content-box-nav {
@@ -924,7 +976,7 @@ span {
     margin-right: 0px;
   }
   .connect-yeild-btn {
-    width: 90px;
+    min-width: 90px;
     font-size: 14px;
   }
   .advantage__table {
@@ -1026,6 +1078,7 @@ span {
     display: block;
   }
   .Dashboard-card {
+    width: 100%;
     margin: 10px 0px;
     padding: 40px 40px;
   }

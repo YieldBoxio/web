@@ -26,8 +26,8 @@ const Nft = () => {
                                 <li>Trade it on our Marketplace OR own it to earn passive income and particiate in our WallStreet Social Game.</li>
                             </ul>
                             <div className="nft-collection-btns">
-                                <Link to="" className="btn btn-block btn__learn">Learn More</Link>
-                                <Link to="" className="btn btn-block btn__collection">NFT Collection</Link>
+                                <Link to="/" className="btn btn-block btn__learn">Learn More</Link>
+                                <Link to="/" className="btn btn-block btn__collection">NFT Collection</Link>
                             </div>
                         </Slide>
                     </Col>

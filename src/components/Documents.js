@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import file from '../assets/img/file.png';
 import audit from '../assets/img/audit.png';
 import Slide from "react-reveal/Slide";
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 const Documents = () => {
-  const history = useHistory();
+  // const history = useHistory();
   return (
     <div className="bgImg documents__section" id="documents__section">
       <div className="container-md min-vh-100 d-flex flex-column justify-content-center align-items-center">
@@ -26,7 +26,7 @@ const Documents = () => {
                     <div className="card__content">
                       <img alt="card img" width={80} src={file} />
                       <h5>Contract<br />Address</h5>
-                      <Link className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
+                      <Link to="/" className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
                     </div>
                   </Card>
                 </Slide>
@@ -37,7 +37,7 @@ const Documents = () => {
                     <div className="card__content">
                       <img alt="card img" width={80} src={audit} />
                       <h5>Interfi<br />Audit</h5>
-                      <Link className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
+                      <Link to="/" className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
                     </div>
                   </Card>
                 </Slide>
@@ -48,7 +48,7 @@ const Documents = () => {
                     <div className="card__content">
                       <img alt="card img" width={80} src={audit} />
                       <h5>Solid<br />Proof</h5>
-                      <Link className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
+                      <Link to="/" className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
                     </div>
                   </Card>
                 </Slide>
@@ -60,7 +60,7 @@ const Documents = () => {
                       <div className="card__content">
                         <img alt="card img" width={80} src={file} />
                         <h5>English<br />Whitepaper</h5>
-                        <Link className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
+                        <Link to="/" className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
                       </div>
                     </Card>
                   </a>
@@ -72,7 +72,7 @@ const Documents = () => {
                     <div className="card__content">
                       <img alt="card img" width={80} src={file} />
                       <h5>Chinese<br />Whitepaper</h5>
-                      <Link className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
+                      <Link to="/" className="btn btn__link"><i class="fa-solid fa-paperclip"></i></Link>
                     </div>
                   </Card>
                 </Slide>

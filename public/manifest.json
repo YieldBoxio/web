@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Yield Box",
+  "name": "World's No.1 Dual Reward Auto-Staking & Auto-Compounding Protocol in DeFi. Hold and print $BUSD 7% / Hr & $YBX APY: 1,171,519.7% calculate every 5 mins 288x/Day",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logopng.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logopng.png",
       "type": "image/png",
       "sizes": "512x512"
     }
