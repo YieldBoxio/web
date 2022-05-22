@@ -30,7 +30,6 @@ const ClaimReward = () => {
                     </div>
                 </div>
             </Zoom>
-            {/* </Row> */}
             <div className='Dashboard-full-card mt-5'>
                 <div className='row w-100 m-0'>
                     <div className='col-lg-6 calculator-column'>
