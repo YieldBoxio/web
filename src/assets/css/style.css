@@ -862,6 +862,115 @@ span {
 }
 /* Calculator */
 
+/* Swap */
+.swap-box {
+  background: linear-gradient(160deg, #08986b3d 38.51%, #9b0cb463 144.42%);
+  mix-blend-mode: normal;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  color: white;
+  width: 100%;
+}
+.swap-box-right {
+  text-align: right;
+}
+.swap-box-2ndright {
+  text-align: right;
+  align-items: flex-end;
+  justify-content: right;
+  display: flex;
+}
+.swap-wallet-blance {
+  font-weight: 400;
+  font-size: 13px;
+}
+.swap-input {
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+  color: white;
+  font-size: 1.25rem;
+  background-color: transparent;
+}
+.swap-input::placeholder {
+  color: white;
+}
+.swap-modals svg path {
+  fill: white;
+}
+.swap-modals svg {
+  text-align: right;
+  width: 20px;
+  height: 20px;
+}
+.swap-action {
+  align-items: center;
+  justify-content: space-between;
+}
+.swap-action p {
+  margin: 0px;
+}
+.swap-action .connect-yeild-btn {
+  padding: 6px 10px;
+  /* width: 100%; */
+}
+.swap-modals {
+  text-align: right;
+}
+.change-swap-arrow:hover {
+  background: linear-gradient(157deg, #08986b 38.51%, #9b0cb4 144.42%);
+}
+.change-swap-arrow {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 20px auto;
+  padding: 0px 10px;
+  border-radius: 100%;
+  background: linear-gradient(160deg, #08986b3d 38.51%, #9b0cb463 144.42%);
+}
+.swap-modals svg {
+  margin: 0px 0px 0px 15px;
+}
+.change-swap-arrow svg {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+.swap-wallet-btn button {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px 0px;
+}
+.yeidl-buy-vs-swap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.yeidl-buy-vs-swap button {
+  width: 32%;
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.yeidl-buy-vs-swap button svg {
+  width: 34px;
+  height: 24px;
+}
+.yeidl-buy-vs-swap .Exchan-geGraph-Svg svg {
+  height: 20px;
+}
+.yeidl-buy-vs-swap .Exchan-geGraph-Svg svg path {
+  fill: white;
+}
+.swap-summary p {
+  text-align: center;
+}
+/* Swap */
+
 /*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 1440px) {

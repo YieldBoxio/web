@@ -6,6 +6,7 @@ import Slide from "react-reveal/Slide";
 import { ethers } from 'ethers';
 import CalculatorView from '../../components/DashboardComps/CalculatorView';
 import ClaimReward from '../../components/DashboardComps/ClaimReward';
+import YieldSwap from '../../components/DashboardComps/YieldSwap';
 
 
 const DashboardMainView = () => {
@@ -78,7 +79,8 @@ const DashboardMainView = () => {
                         <div className='dashboard-main-content'>
                             {/* <DashboardView /> */}
                             {/* <CalculatorView /> */}
-                            <ClaimReward />
+                            {/* <ClaimReward /> */}
+                            <YieldSwap />
                         </div>
                     </Container>
                 </Col>
