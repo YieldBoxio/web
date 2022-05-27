@@ -1092,9 +1092,10 @@ span {
     font-size: 14px;
   }
   .advantage__table {
-    width: 95%;
-    max-width: 95%;
+    width: 85%;
+    max-width: 85%;
     overflow: hidden;
+    margin: 0 auto !important;
   }
   .Documents-row {
     display: flex;
@@ -1184,6 +1185,18 @@ span {
 }
 
 @media screen and (max-width: 600px) {
+  .tokenomics__table-subheading {
+    text-align: center;
+  }
+  .tokenomics__section{
+    padding: 50px 0px;
+  }
+  table tr td{
+    font-size: 13px;
+  }
+  h5{
+    font-size: 13px !important;
+  }
   .app-butns {
     position: unset;
     width: 100%;
