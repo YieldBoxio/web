@@ -37,6 +37,10 @@ const Tokenomics = () => {
                   <td>13%</td>
                 </tr>
                 <tr>
+                  <td>Exit Fee:</td>
+                  <td><span className="down-fall p-0">15%</span></td>
+                </tr>
+                <tr>
                   <td>Decimals:</td>
                   <td>18</td>
                 </tr>

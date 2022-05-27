@@ -9,7 +9,7 @@ const Earning = () => {
         <Row className="justify-content-center align-items-center w-100">
           <Col xs="12" md="12" lg="6" className="earning__content">
             <Slide right>
-              <h2>How much <br />I can will earn?</h2>
+              <h2>How much <br />I can earn?</h2>
               <ul>
                 {/* <li className="d-flex">
                   <div className="left-border-line"></div>

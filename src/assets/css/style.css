@@ -974,6 +974,9 @@ span {
 /*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 1440px) {
+  .todo__section h4{
+    margin-top: 0px;
+  }
   .side__nav {
     padding: 5rem 5rem;
   }
