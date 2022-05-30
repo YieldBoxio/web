@@ -11,7 +11,7 @@ const Navigation = () => {
           <NavLink className="navbar-brand text-white" to="/">
             <img
               alt=""
-              src={logo}
+              src={logo} 
               width="30"
               height="30"
               className="d-inline-block align-top"
