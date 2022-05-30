@@ -41,39 +41,107 @@ const DashBTabs = () => {
     }
     const provider = new ethers.providers.web3Provider(window.ethereum);
   };
+
+  // Responcive querys
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const [showTab, setShowTab] = useState(false);
+  const breakpoint = 768;
+
+  // React.useEffect(() => {
+  //   const handleResizeWindow = () => setWidth(window.innerWidth);
+  //    window.addEventListener("resize", handleResizeWindow);
+  //    return () => {
+  //      window.removeEventListener("resize", handleResizeWindow);
+  //    };
+  //  }, []);
+
+  useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
   return (
     <>
-      <Slide left className="yieldbox-dash-logo">
-        <NavLink className="dash-logo-tab navbar-brand text-white" to="/">
-          <img
-            alt=""
-            src={logo}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />
-          <span>Yield Box</span>
-        </NavLink>
-      </Slide>
+      <div
+        className="responcive_sidebar_btn"
+        onClick={() => setShowTab(true)}
+      >
+        <i class="fas fa-bars"></i>
+      </div>
       <Tabs className="dash_view_tabs_row p-0">
-        <TabList className="dashboard-sidebar col-xl-2 com-lg-3">
-          <Tab className="px-3 dash-link">
-            <img src={Dashlinkimg} /> Dashboard
-          </Tab>
-          <Tab className="px-3 dash-link">
-            <img src={Dashlinkimg} /> Claim Reward
-          </Tab>
-          <Tab className="px-3 dash-link">
-            <img src={Calculator} /> Calculator
-          </Tab>
-          <Tab className="px-3 dash-link">
-            <img src={Swap} /> Swap
-          </Tab>
-          <Tab className="px-3 dash-link">
-            <img src={Docs} /> Docs
-          </Tab>
-        </TabList>
-        <div className="col-xl-9 col-lg-9 dashboard-content-main-wrapper">
+        {width > breakpoint ? (
+          <TabList className="dashboard-sidebar col-xl-2 com-lg-3">
+            <Tab className="px-3 dash-link">
+              <img src={Dashlinkimg} /> Dashboard
+            </Tab>
+            <Tab className="px-3 dash-link">
+              <img src={Dashlinkimg} /> Claim Reward
+            </Tab>
+            <Tab className="px-3 dash-link">
+              <img src={Calculator} /> Calculator
+            </Tab>
+            <Tab className="px-3 dash-link">
+              <img src={Swap} /> Swap
+            </Tab>
+            <Tab className="px-3 dash-link">
+              <img src={Docs} /> Docs
+            </Tab>
+            <Tab className="dash-logo-tab ">
+              <Slide left className="yieldbox-dash-logo">
+                <NavLink className="navbar-brand text-white" to="/">
+                  <img
+                    alt=""
+                    src={logo}
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                  />
+                  <span>Yield Box</span>
+                </NavLink>
+              </Slide>
+            </Tab>
+          </TabList>
+        ) : showTab ? (
+          <>
+            <TabList className="dashboard-sidebar col-xl-2 com-lg-3">
+              <Tab className="px-3 dash-link">
+                <img src={Dashlinkimg} /> Dashboard
+              </Tab>
+              <Tab className="px-3 dash-link">
+                <img src={Dashlinkimg} /> Claim Reward
+              </Tab>
+              <Tab className="px-3 dash-link">
+                <img src={Calculator} /> Calculator
+              </Tab>
+              <Tab className="px-3 dash-link">
+                <img src={Swap} /> Swap
+              </Tab>
+              <Tab className="px-3 dash-link">
+                <img src={Docs} /> Docs
+              </Tab>
+              <Tab className="dash-logo-tab ">
+                <Slide left className="yieldbox-dash-logo">
+                  <NavLink className="navbar-brand text-white" to="/">
+                    <img
+                      alt=""
+                      src={logo}
+                      width="30"
+                      height="30"
+                      className="d-inline-block align-top"
+                    />
+                    <span>Yield Box</span>
+                  </NavLink>
+                </Slide>
+              </Tab>
+            </TabList>
+            <i class="fa fa-times crose_btn_dash_tabs" onClick={() => setShowTab(false)}></i>
+          </>
+        ) : null}
+        <div className="col-xl-9 col-lg-9 col-sm-11 dashboard-content-main-wrapper">
           <Row className="dashboard-content-box-nav-wrapper">
             <Slide top className="row m-0">
               <p className="walletAddress_box w-fit-content">
@@ -121,6 +189,7 @@ const DashBTabs = () => {
           <TabPanel>
             <h2>Docs</h2>
           </TabPanel>
+          <TabPanel></TabPanel>
         </div>
       </Tabs>
     </>

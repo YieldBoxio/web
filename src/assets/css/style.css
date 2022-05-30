@@ -718,7 +718,7 @@ span {
 }
 
 /* Dashboard */
-.dash-logo-tab{
+.dash-logo-tab {
   top: 1vh;
   left: 3vh;
   cursor: pointer;
@@ -728,17 +728,17 @@ span {
   display: flex;
   align-items: center;
 }
-.yieldbox-dash-logo{
+.yieldbox-dash-logo {
   z-index: 9;
 }
-.dash_view_tabs_row{
+.dash_view_tabs_row {
   color: white;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: space-between;
 }
-.walletAddress_box{
+.walletAddress_box {
   color: white;
   width: fit-content;
   margin-bottom: 0px;
@@ -797,7 +797,7 @@ span {
   border: none;
   outline: 0;
 }
-.dashboard-content-main-wrapper{
+.dashboard-content-main-wrapper {
   margin-left: 20%;
 }
 .dashboard-content-box-nav-wrapper {
@@ -942,7 +942,7 @@ span {
   justify-content: space-between;
 }
 .swap-action p {
-  margin: 0px;
+  margin: 0px 5px 0px 0px;
 }
 .swap-action .connect-yeild-btn {
   padding: 6px 10px;
@@ -1007,7 +1007,7 @@ span {
 /*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 1440px) {
-  .todo__section h4{
+  .todo__section h4 {
     margin-top: 0px;
   }
   .side__nav {
@@ -1034,6 +1034,12 @@ span {
 }
 
 @media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+}
+  .dashboard-content-main-wrapper {
+    margin-left: 23.5%;
+  }
   .side__nav {
     padding: 5rem 2rem 5rem 2rem;
   }
@@ -1090,9 +1096,35 @@ span {
     font-size: 5rem;
     color: #08986b;
   }
+  .responcive_sidebar_btn{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .crose_btn_dash_tabs{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .responcive_sidebar_btn{
+    display: block;
+    z-index: 9;
+  }
+  .dash_view_tabs_row{
+    display: block;
+  }
+  .dashboard-content-main-wrapper{
+    margin: 0px auto;
+  }
+  .dashboard-wrapper .dashboard-sidebar {
+    position: unset;
+    height: fit-content;
+    padding-top: 10vh;
+  }
   .rebase-count {
     font-size: 2.5rem;
     color: #08986b;
@@ -1221,13 +1253,13 @@ span {
   .tokenomics__table-subheading {
     text-align: center;
   }
-  .tokenomics__section{
+  .tokenomics__section {
     padding: 50px 0px;
   }
-  table tr td{
+  table tr td {
     font-size: 13px;
   }
-  h5{
+  h5 {
     font-size: 13px !important;
   }
   .app-butns {
