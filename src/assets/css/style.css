@@ -718,6 +718,31 @@ span {
 }
 
 /* Dashboard */
+.dash-logo-tab{
+  top: 1vh;
+  left: 3vh;
+  cursor: pointer;
+  margin: 20px auto;
+  position: absolute;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.yieldbox-dash-logo{
+  z-index: 9;
+}
+.dash_view_tabs_row{
+  color: white;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.walletAddress_box{
+  color: white;
+  width: fit-content;
+  margin-bottom: 0px;
+}
 .dashboard-wrapper {
   background-image: url(../img//bgdashboard.png),
     linear-gradient(131deg, #030303, #030303);
@@ -728,17 +753,22 @@ span {
   background-repeat: no-repeat;
 }
 .dashboard-sidebar {
+  top: 0px;
   height: 100vh;
+  position: fixed;
+  padding: 100px 20px 20px 20px;
   mix-blend-mode: normal;
   border-radius: 0px 20px 20px 0px;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px 0px;
 }
 .dash-link {
   color: #a5a6bb;
   margin: 10px 0px;
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+  cursor: pointer;
 }
-.active-dash-link {
+.dashboard-sidebar .react-tabs__tab--selected {
   background: linear-gradient(160deg, #08986b3d 38.51%, #9b0cb463 144.42%);
   mix-blend-mode: normal;
   border-radius: 10px;
@@ -767,11 +797,14 @@ span {
   border: none;
   outline: 0;
 }
+.dashboard-content-main-wrapper{
+  margin-left: 20%;
+}
 .dashboard-content-box-nav-wrapper {
   display: flex;
   margin: 20px 0px;
-  justify-content: right;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .dashboard-content-box-nav {
   width: 30%;
