@@ -19,8 +19,8 @@ const Documents = () => {
             </Slide>
           </Col>
           <Col xs="12" className="text-center">
-            <div className="Documents-row">
-              <Col lg="2" md="4" className="mb-md-3 mb-sm-3">
+            <div className="Documents-row flex-wrap">
+              <div className="document__card__col">
                 <Slide left>
                   <Card className="text-center text-white p-3 rebase-card">
                     <div className="card__content">
@@ -30,8 +30,8 @@ const Documents = () => {
                     </div>
                   </Card>
                 </Slide>
-              </Col>
-              <Col lg="2" md="4" className="mb-md-3 mb-sm-3">
+              </div>
+              <div className="document__card__col">
                 <Slide left>
                   <Card className="text-center text-white p-3 rebase-card">
                     <div className="card__content">
@@ -41,8 +41,8 @@ const Documents = () => {
                     </div>
                   </Card>
                 </Slide>
-              </Col>
-              <Col lg="2" md="4" className="mb-md-3 mb-sm-3">
+              </div>
+              <div className="document__card__col">
                 <Slide bottom>
                   <Card className="text-center text-white p-3 rebase-card">
                     <div className="card__content">
@@ -52,8 +52,8 @@ const Documents = () => {
                     </div>
                   </Card>
                 </Slide>
-              </Col>
-              <Col lg="2" md="4" className="mb-md-3 mb-sm-3">
+              </div>
+              <div className="document__card__col">
                 <Slide right>
                   <a href="https://yieldboxio.gitbook.io">
                     <Card className="text-center text-white p-3 rebase-card">
@@ -65,8 +65,8 @@ const Documents = () => {
                     </Card>
                   </a>
                 </Slide>
-              </Col>
-              <Col lg="2" md="4" className="mb-md-3 mb-sm-3">
+              </div>
+              <div className="document__card__col">
                 <Slide right>
                   <Card className="text-center text-white p-3 rebase-card">
                     <div className="card__content">
@@ -76,7 +76,7 @@ const Documents = () => {
                     </div>
                   </Card>
                 </Slide>
-              </Col>
+              </div>
             </div>
           </Col>
         </Row>

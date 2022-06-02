@@ -278,6 +278,10 @@ span {
   font-size: 1rem;
 }
 
+.document__card__col{
+  width: 19%;
+}
+
 .documents__section h2 {
   font-size: 5rem;
   color: #08986b;
@@ -994,6 +998,19 @@ span {
   }
   h2 {
     font-size: 3.5rem;
+  }
+  .Documents-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+  .document__card__col{
+    width: 30%;
+    margin: 10px 8px 10px 8px;
+  }
+  .side__nav{
+    padding: 2rem 6rem;
   }
 }
 
