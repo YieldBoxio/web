@@ -1,48 +1,33 @@
 import DashboardSidebar from '../../components/DashboardComps/DashboardSidebar'
 import DashboardView from '../../components/DashboardComps/DashboardView';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Col, Row, Button } from "react-bootstrap";
 import Slide from "react-reveal/Slide";
 import { ethers } from 'ethers';
 import CalculatorView from '../../components/DashboardComps/CalculatorView';
 import ClaimReward from '../../components/DashboardComps/ClaimReward';
 import YieldSwap from '../../components/DashboardComps/YieldSwap';
-
+import { useNavigate } from "react-router-dom";
+import DashBTabs from '../../components/DashboardComps/DashBTabs';
 
 const DashboardMainView = () => {
 
-    const [walletAddress, setWalletAddress] = useState("");
+    // const [activeRoute, setActiveRoute] = useState("");
 
-    const connectMeta = async () => {
-        console.log('Requesting account...');
-        if (window.ethereum) {
-            console.log('detected');
-            try {
-                const accounts = await window.ethereum.request({
-                    method: "eth_requestAccounts",
-                })
-                setWalletAddress(accounts[0]);
+    // useEffect(() =>{
+    //     if(navigate== '/dashboard'){
+    //         setActiveRoute(<DashboardView />)
+    //     }
+    // },[])
 
-            } catch (error) {
-                console.log("🚀 ~ Error connecting...", error);
-            }
-        } else {
-            alert('Meta Mask not detected, Please install Meta Mask');
-        }
-    }
 
-    const connectWallet = async () => {
-        if (typeof window.ethereum !== 'undefined') {
-            await connectMeta();
-        }
-        const provider = new ethers.providers.web3Provider(window.ethereum)
-    }
+
 
 
     return (
         <div className='dashboard-wrapper'>
             <Row className='m-0'>
-                <Col xl="2" lg="3" className='dashboard-sidebar'>
+                {/* <Col xl="2" lg="3" className='dashboard-sidebar'>
                     <Container>
                         <DashboardSidebar />
                     </Container>
@@ -68,22 +53,23 @@ const DashboardMainView = () => {
                                         <i className="fa-brands fa-twitter"></i>
                                     </a>
                                 </Col>
-                                <Button className="connect-yeild-btn" onClick={() => connectMeta()}>
+                                <Button className="connect-yeild-btn" onClick={() => requestMetaMask()}>
                                     Connect
                                 </Button>
                             </div>
+                            <div className='walletAddress_box'>
+                                wallet Address: {walletAddress}
+                            </div>
                         </Slide>
                     </Row>
-                    {/* End dashboard Right Nav */}
                     <Container>
+                        <DashBTabs />
                         <div className='dashboard-main-content'>
-                            {/* <DashboardView /> */}
-                            {/* <CalculatorView /> */}
-                            {/* <ClaimReward /> */}
                             <YieldSwap />
                         </div>
                     </Container>
-                </Col>
+                </Col> */}
+                <DashBTabs />
             </Row>
         </div>
     )

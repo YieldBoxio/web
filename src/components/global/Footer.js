@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="fixed-bottom footer__section py-2">
       <Container>
-        <Row className="d-flex justify-content-between align-items-center">
+        <Row className="d-flex justify-content-between align-items-center m-0">
           <Col xs="4" md="2" className="footer__socials">
             <a href="https://www.linkedin.com/YieldBoxio" className="social__link">
               <i className="fa-brands fa-linkedin"></i>

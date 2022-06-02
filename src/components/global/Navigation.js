@@ -11,7 +11,7 @@ const Navigation = () => {
           <NavLink className="navbar-brand text-white" to="/">
             <img
               alt=""
-              src={logo}
+              src={logo} 
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -19,7 +19,7 @@ const Navigation = () => {
             Yield Box
           </NavLink>
           <Nav className="ml-auto">
-            <NavLink to="/" className="nav-link px-3 btn-gradient">
+            <NavLink to="/dashboard" className="nav-link px-3 btn-gradient">
               {/* Dashboard */}
               APP <span className="soon-text">(Coming Soon)</span>
             </NavLink>

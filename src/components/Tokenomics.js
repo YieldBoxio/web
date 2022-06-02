@@ -37,6 +37,10 @@ const Tokenomics = () => {
                   <td>13%</td>
                 </tr>
                 <tr>
+                  <td>Exit Fee:</td>
+                  <td><span className="down-fall p-0">15%</span></td>
+                </tr>
+                <tr>
                   <td>Decimals:</td>
                   <td>18</td>
                 </tr>
@@ -62,7 +66,7 @@ const Tokenomics = () => {
           <Col lg="6" md="12" className="my-3">
             <Container fluid className="p-0">
               <Slide right>
-                <Row className="my-3 w-100">
+                <Row className="my-3 w-100 mx-0">
                   <Col xs="6">
                     <Card className="text-center text-white p-3 rebase-card">
                       <div className="card__content">
@@ -80,7 +84,7 @@ const Tokenomics = () => {
                     </Card>
                   </Col>
                 </Row>
-                <Row className="my-3 w-100">
+                <Row className="my-3 w-100 mx-0">
                   <Col xs="6">
                     <Card className="text-center text-white p-3 rebase-card">
                       <div className="card__content">

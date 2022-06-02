@@ -11,7 +11,7 @@ const Nft = () => {
                 <Row className="w-100 justify-content-center my-5">
                     <Slide top>
                         <Col className="text-center">
-                            <h2>Enjoy Exclusive YieldBox NFT Collection</h2>
+                            <h2>Exclusive YieldBox NFT Collection</h2>
                             {/* <p>YieldBox NFT Collection</p> */}
                         </Col>
                     </Slide>

@@ -15,7 +15,7 @@ const About = () => {
                   5-minute Reward and every hour for 7% <span className="BUSD__color">BUSD</span> Reflection”
                 </p>
               </Container>
-              <Row className="justify-content-center">
+              <Row className="justify-content-center m-0 w-md-75">
                 <Col lg="4" md="6" sm="12" className="my-3">
                   <Button className="btn-gradient btn-block btn-lg btn">
                     Buy on Pancakes
