@@ -8,7 +8,7 @@ const YieldCount = () => {
     return (
         <div className="YieldCount-wrapper">
             <CountUp 
-              start={875.039}
+              start={1171519.70}
               end={1171519.70}
               duration={2.75}
               separator=" "
