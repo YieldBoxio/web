@@ -1046,7 +1046,7 @@ span {
     margin: 10px 8px 10px 8px;
   }
   .side__nav{
-    padding: 2rem 6rem;
+    padding: 0rem 3rem;
   }
 }
 
@@ -1084,7 +1084,7 @@ span {
     justify-content: center;
   }
   .side__nav {
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
   }
   .slider__section .slider__content h2 {
     font-size: 6vmax;

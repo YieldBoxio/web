@@ -4,10 +4,19 @@ import VisibilitySensor from "react-visibility-sensor";
 
 
 const YieldCount = () => {
-    const [focus, setFocus] = useState(false);
+    // const [focus, setFocus] = useState(false);
     return (
         <div className="YieldCount-wrapper">
-            <CountUp start={focus ? 100000 : null} end={117151970} duration={1} redraw={true}>
+            <CountUp 
+              start={875.039}
+              end={1171519.70}
+              duration={2.75}
+              separator=" "
+              decimals={2}
+              decimal=","
+              prefix=""
+              suffix="" 
+            >
                 {({ countUpRef }) => (
                     <div className='w-100 '>
                         <span className='rebase-count'><i class="fas fa-plus"></i></span>
@@ -15,7 +24,6 @@ const YieldCount = () => {
                         <VisibilitySensor
                             onChange={isVisible => {
                                 if (isVisible) {
-                                    setFocus(true);
                                 }
                             }}
                         >
