@@ -10,7 +10,7 @@ const Slider = () => {
         <Row className="align-items-center w-100">
           <Col xs="12" className="text-center slider__content">
             <Zoom>
-              <div className="d-inline-flex align-items-center justify-content-between">
+              <div className="hero-logo-text">
                 <img src={logo} />
                 <h2>Yield Box</h2>
               </div>

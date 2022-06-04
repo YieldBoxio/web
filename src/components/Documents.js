@@ -10,7 +10,7 @@ const Documents = () => {
   // const history = useHistory();
   return (
     <div className="bgImg documents__section" id="documents__section">
-      <div className="container-md min-vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div className="min-vh-100 documents__section__container">
         <Row className="w-100 justify-content-center">
           <Col xs="8" className="text-center">
             <Slide top>

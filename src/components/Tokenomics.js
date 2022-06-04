@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Col, Container, Row, Table } from "react-bootstrap";
-import dummyImg from '../assets/img/liquidity.png'
-import rewards from '../assets/img/rewards.png'
-import yieldbox from '../assets/img/yieldbox.png'
-import yieldinferno from '../assets/img/yieldinferno.png'
+import dummyImg from "../assets/img/liquidity.png";
+import rewards from "../assets/img/rewards.png";
+import yieldbox from "../assets/img/yieldbox.png";
+import yieldinferno from "../assets/img/yieldinferno.png";
 import Slide from "react-reveal/Slide";
 
 const Tokenomics = () => {
@@ -17,50 +17,56 @@ const Tokenomics = () => {
         </Row>
         <Row className="align-items-center w-100 tokenomics__table-wrapper">
           <Col lg="6" md="12" className="my-3 tokenomics__table">
-            <h6 className="tokenomics__table-subheading">Network: Binance Smart Chain (BEP-20)</h6>
+            <h6 className="tokenomics__table-subheading">
+              Network: Binance Smart Chain (BEP-20)
+            </h6>
             <Slide left>
-              <Table responsive="sm">
-                <tr>
-                  <td>Token Name:</td>
-                  <td>Yield Box</td>
-                </tr>
-                <tr>
-                  <td>Symbol:</td>
-                  <td>$YBX</td>
-                </tr>
-                <tr>
-                  <td>Initial Supply:</td>
-                  <td>10,000,000</td>
-                </tr>
-                <tr>
-                  <td>Entry Fee:</td>
-                  <td>13%</td>
-                </tr>
-                <tr>
-                  <td>Exit Fee:</td>
-                  <td><span className="down-fall p-0">15%</span></td>
-                </tr>
-                <tr>
-                  <td>Decimals:</td>
-                  <td>18</td>
-                </tr>
-                <tr>
-                  <td>Initial Supply Percentage:</td>
-                  <td>6%</td>
-                </tr>
-                <tr>
-                  <td>Fair Launch:</td>
-                  <td>53%</td>
-                </tr>
-                <tr>
-                  <td>Liquidity:</td>
-                  <td>40%</td>
-                </tr>
-                <tr>
-                  <td>Airdrop:</td>
-                  <td>1%</td>
-                </tr>
-              </Table>
+              <div className="advantage__table__scroll col-lg-12 col-md-12">
+                <Table responsive="sm">
+                  <tr>
+                    <td>Token Name:</td>
+                    <td>Yield Box</td>
+                  </tr>
+                  <tr>
+                    <td>Symbol:</td>
+                    <td>$YBX</td>
+                  </tr>
+                  <tr>
+                    <td>Initial Supply:</td>
+                    <td>10,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>Entry Fee:</td>
+                    <td>13%</td>
+                  </tr>
+                  <tr>
+                    <td>Exit Fee:</td>
+                    <td>
+                      <span className="down-fall p-0">15%</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Decimals:</td>
+                    <td>18</td>
+                  </tr>
+                  <tr>
+                    <td>Initial Supply Percentage:</td>
+                    <td>6%</td>
+                  </tr>
+                  <tr>
+                    <td>Fair Launch:</td>
+                    <td>53%</td>
+                  </tr>
+                  <tr>
+                    <td>Liquidity:</td>
+                    <td>40%</td>
+                  </tr>
+                  <tr>
+                    <td>Airdrop:</td>
+                    <td>1%</td>
+                  </tr>
+                </Table>
+              </div>
             </Slide>
           </Col>
           <Col lg="6" md="12" className="my-3">

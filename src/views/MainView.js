@@ -38,7 +38,8 @@ const AdminView = (props) => {
     return (
       <div className="main__view">
         <Navigation />
-        {windowWidth < 720 ? null : <SideNavigation />}
+        <SideNavigation />
+        {/* {windowWidth < 720 ? null : <SideNavigation />} */}
         <Container fluid>
           <Row>
             <Col className='p-0'>

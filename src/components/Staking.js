@@ -38,7 +38,7 @@ const Staking = () => {
               </Slide>
               <Slide bottom>
                 <Row className="justify-content-center">
-                  <Col lg="3" md="6" sm="12" className="my-3 mb-md-2 mb-sm-2">
+                  <Col lg="3" md="6" sm="10" className="my-3 mb-md-2 mb-sm-2">
                     <Card
                       className="text-center rebase-card"
                     >
@@ -48,7 +48,7 @@ const Staking = () => {
                       </Card.Body>
                     </Card>
                   </Col>
-                  <Col lg="3" md="6" sm="12" className="my-3 mb-md-2 mb-sm-2">
+                  <Col lg="3" md="6" sm="10" className="my-3 mb-md-2 mb-sm-2">
                     <Card
                       className="text-center rebase-card"
                     >
@@ -58,7 +58,7 @@ const Staking = () => {
                       </Card.Body>
                     </Card>
                   </Col>
-                  <Col lg="3" md="6" sm="12" className="my-3 mb-md-2 mb-sm-2">
+                  <Col lg="3" md="6" sm="10" className="my-3 mb-md-2 mb-sm-2">
                     <Card
                       className="text-center rebase-card"
                     >

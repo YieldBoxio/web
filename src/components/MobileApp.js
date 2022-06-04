@@ -45,7 +45,7 @@ const MobileApp = () => {
               </div>
             </Slide>
             <Zoom>
-              <div className="mobilApp">
+              <div className="mobilApp mobilApp-width">
                 <img src={mobilApp} />
               </div>
             </Zoom>

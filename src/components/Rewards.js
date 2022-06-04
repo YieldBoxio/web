@@ -16,10 +16,10 @@ const Rewards = () => {
             </Slide> */}
           </Col>
         </Row>
-        <Row className="advantage__table w-100">
+        <div className="advantage__table w-100 p-0">
           <Col lg="12" md="12">
             <Slide bottom>
-              <Table borderless responsive="sm" className="rewards__table align-middle table-responsive">
+              <Table borderless responsive="sm" className="p-0 rewards__table align-middle table-responsive">
                 <thead>
                   <tr>
                     <td>Entry 13%</td>
@@ -41,7 +41,7 @@ const Rewards = () => {
               </Table>
             </Slide>
           </Col>
-        </Row>
+        </div>
       </div>
     </div >
   );

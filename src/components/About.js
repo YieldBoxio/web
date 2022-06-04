@@ -8,7 +8,7 @@ const About = () => {
       <div className="container-md min-vh-100 d-flex">
         <Row className="w-100 align-items-center">
           <Slide left>
-            <Col xs="12" className="text-center about__content">
+            <div className="col-xl-12 col-lg-12 col-sm-10 text-center about__content">
               <Container>
                 <p>
                   “World’s No.1 Yield Box Auto-Staking and Auto-Reflection Protocol (YASAR) with every
@@ -16,18 +16,18 @@ const About = () => {
                 </p>
               </Container>
               <Row className="justify-content-center m-0 w-md-75">
-                <Col lg="4" md="6" sm="12" className="my-3">
+                <Col lg="4" md="6" sm="8" className="my-3">
                   <Button className="btn-gradient btn-block btn-lg btn">
                     Buy on Pancakes
                   </Button>
                 </Col>
-                <Col lg="4" md="6" sm="12" className="my-3">
+                <Col lg="4" md="6" sm="8" className="my-3">
                   <Button className="btn-gradient btn-block btn-lg btn">
                     Read Whitepaper
                   </Button>
                 </Col>
               </Row>
-            </Col>
+            </div>
           </Slide>
         </Row>
       </div>
