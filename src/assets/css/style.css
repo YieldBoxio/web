@@ -1058,6 +1058,7 @@ span {
   }
   .side__nav {
     padding: 0rem 3rem;
+    right: -4rem;
   }
 }
 
