@@ -54,7 +54,7 @@ class Faqs extends React.Component {
             </Col>
 
             <Col md={8} className="mb-3">
-              <Slide right>
+              <Slide top>
                 <div
                   className="d-flex accordion__faq align-items-center"
                   style={{
@@ -134,7 +134,7 @@ class Faqs extends React.Component {
             </Col>
 
             <Col md={8} className="mb-3">
-              <Slide right>
+              <Slide bottom>
                 <div
                   className="d-flex accordion__faq align-items-center"
                   style={{
@@ -219,7 +219,7 @@ class Faqs extends React.Component {
               </Slide>
             </Col>
             <Col md={8} className="mb-3">
-              <Slide right>
+              <Slide top>
                 <div
                   className="d-flex accordion__faq align-items-center"
                   style={{

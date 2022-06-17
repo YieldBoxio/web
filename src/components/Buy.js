@@ -49,7 +49,7 @@ const Buy = () => {
                 </Slide>
               </Col>
               <Col className="yield-column">
-                <Slide right>
+                <Slide left>
                   <Card className="text-center text-white p-4">
                     <div className="card__content">
                       <img alt="card img" width={80} src={sgc} />

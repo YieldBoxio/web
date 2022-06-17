@@ -8,7 +8,7 @@ const Earning = () => {
       <div className="container-md min-vh-100 d-flex">
         <Row className="justify-content-center align-items-center w-100">
           <Col xs="12" md="12" lg="6" className="earning__content">
-            <Slide right>
+            <Slide left>
               <h2>How much <br />I can earn?</h2>
               <ul>
                 {/* <li className="d-flex">

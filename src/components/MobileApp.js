@@ -20,7 +20,7 @@ const MobileApp = () => {
               {/* <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu m doloremque
                 laudantium, totam rem aperiam, eaque ipsa.</p> */}
             </Slide>
-            <Slide right>
+            <Slide left>
               <div className="app-butns">
                 <div className="app-btn-box">
                   <button type="button" class="btn-gradient w-auto btn-lg my-3">

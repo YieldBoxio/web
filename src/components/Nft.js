@@ -32,7 +32,7 @@ const Nft = () => {
                         </Slide>
                     </Col>
                     <Col md="4">
-                        <Slide right>
+                        <Slide bottom>
                             <img src={nftgif} className="img-responsive" />
                         </Slide>
                     </Col>

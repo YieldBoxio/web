@@ -54,7 +54,7 @@ const Documents = () => {
                 </Slide>
               </div>
               <div className="document__card__col">
-                <Slide right>
+                <Slide top>
                   <a href="https://yieldboxio.gitbook.io">
                     <Card className="text-center text-white p-3 rebase-card">
                       <div className="card__content">
@@ -67,7 +67,7 @@ const Documents = () => {
                 </Slide>
               </div>
               <div className="document__card__col">
-                <Slide right>
+                <Slide bottom>
                   <Card className="text-center text-white p-3 rebase-card">
                     <div className="card__content">
                       <img alt="card img" width={80} src={file} />

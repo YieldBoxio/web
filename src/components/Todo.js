@@ -78,7 +78,7 @@ const Todo = () => {
             <Slide top>
               <h4 className="text-center">General</h4>
             </Slide>
-            <Slide right>
+            <Slide top>
               <div className="pills__list table-responsive-sm">
                 {listData.map((data) => (
                   <span
@@ -105,7 +105,7 @@ const Todo = () => {
             </Slide>
           </Col>
           <Col xs="12" className="my-2">
-            <Slide right>
+            <Slide bottom>
               <h4 className="text-center">At the End</h4>
               <div className="pills__list table-responsive-sm">
                 {listData3.map((data) => (

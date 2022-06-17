@@ -1052,7 +1052,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .document__card__col {
     width: 30%;
