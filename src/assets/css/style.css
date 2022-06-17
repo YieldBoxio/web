@@ -1089,7 +1089,7 @@ span {
     font-size: 30px;
     margin-left: 20px;
   }
-  .side__nav{
+  .side__nav {
     right: -3rem;
   }
 }
@@ -1120,7 +1120,7 @@ span {
   .staking__section .staking__content h2 {
     font-size: 2.5rem;
   }
-  .side__nav{
+  .side__nav {
     right: -3.5rem;
   }
 }
@@ -1139,7 +1139,7 @@ span {
 }
 
 @media screen and (max-width: 768px) {
-  .side__nav{
+  .side__nav {
     right: 1rem;
   }
   .crose_btn_dash_tabs {
@@ -1239,6 +1239,9 @@ span {
 }
 
 @media screen and (max-width: 720px) {
+  .row {
+    margin: 0px !important;
+  }
   h1 {
     font-size: 1.2rem !important;
   }
